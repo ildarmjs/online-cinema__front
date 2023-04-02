@@ -3,9 +3,10 @@ import { FC } from 'react'
 import AuthButton from '@/ui/video-player/AuthPlaceholder/AuthButton'
 
 import { useAuth } from '@/hooks/useAuth'
-import ReactStars from 'react-rating-stars-component'
+
 import s from './RateMovie.module.scss'
 import { useRateMovie } from './useRateMovie'
+// import StarRatingComponent from 'react-star-rating-component'
 interface IRateMoives {
 	id: string
 	slug: string
@@ -23,13 +24,17 @@ const RateMovie: FC<IRateMoives> = ({ slug, id }) => {
 					{isSended ? (
 						<div className={s.thanks}>Thanks for rating!</div>
 					) : (
-						<ReactStars
-							value={rating}
-							
-							activeColor={'yellow'}
-							onChange={handleClick}
-							size={60}
-						/>
+						<div>Рейтинг {rating}/5</div>
+						// <StarRatingComponent
+						// 	name='app6'
+						// 	value={rating}
+						// 	starCount={5}
+						// 	starColor='#F3D954'
+						// 	emptyStarColor='#F3D954'
+						// 	onStarClick={handleClick}
+						// 	onStarHover={handleClick}
+						// 	// size={60}
+						// />
 					)}
 				</>
 			) : (

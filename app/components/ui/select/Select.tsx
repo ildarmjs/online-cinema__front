@@ -15,7 +15,7 @@ const Select: FC<ISelect> = ({
 	isMulti,
 	options,
 	field,
-	isLoading,
+	isLoading
 }) => {
 	const onChange = (newValue: OnChangeValue<IOption, boolean>) => {
 		field.onChange(
@@ -44,7 +44,7 @@ const Select: FC<ISelect> = ({
 					placeholder={''}
 					options={options}
 					value={getValue()}
-					onChange={onChange}
+					// onChange={onChange}
 					isMulti={isMulti}
 					components={animatedComponents}
 					isLoading={isLoading}
