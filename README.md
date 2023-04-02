@@ -24,8 +24,8 @@
 
 ### Скрины
 
-![Image1](https://github.com/ildarmjs/online-cinema-front/raw/main/screenshot/admin-panel.jpg)
-![Image2](https://github.com/ildarmjs/online-cinema-front/raw/main/screenshot/auth-page.jpg)
-![Image3](https://github.com/ildarmjs/online-cinema-front/raw/main/screenshot/home-page.jpg)
-![Image4](https://github.com/ildarmjs/online-cinema-front/raw/main/screenshot/is-auth.jpg)
-![Image5](https://github.com/ildarmjs/online-cinema-front/raw/main/screenshot/no-auth-page.jpg)
+![Image1](https://github.com/ildarmjs/online-cinema_front/raw/main/screenshot/admin-panel.jpg)
+![Image2](https://github.com/ildarmjs/online-cinema_front/raw/main/screenshot/auth-page.jpg)
+![Image3](https://github.com/ildarmjs/online-cinema_front/raw/main/screenshot/home-page.jpg)
+![Image4](https://github.com/ildarmjs/online-cinema_front/raw/main/screenshot/is-auth.jpg)
+![Image5](https://github.com/ildarmjs/online-cinema_front/raw/main/screenshot/no-auth-page.jpg)
