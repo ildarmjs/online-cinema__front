@@ -8,7 +8,7 @@ import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import Error404 from '../404'
 
 export interface IMoviePage {
-	movie: IMovie | undefined
+	movie?: any
 	similarMovies: IGalleryItem[]
 }
 
@@ -24,14 +24,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
 	try {
 		const { data: movies } = await MovieService.getAll()
 		const paths = movies.map(movie => ({
-			params: { slug: movie.slug },
+			params: { slug: movie.slug }
 		}))
 
 		return { paths, fallback: 'blocking' }
 	} catch {
 		return {
 			paths: [],
-			fallback: false,
+			fallback: false
 		}
 	}
 }
@@ -49,17 +49,17 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 			.map(m => ({
 				name: m.title,
 				posterPath: m.poster,
-				url: getMovieUrl(m.slug),
+				url: getMovieUrl(m.slug)
 			}))
 
 		return {
-			props: { movie, similarMovies },
+			props: { movie, similarMovies }
 		}
 	} catch (e) {
 		console.log(errorCatch(e))
 
 		return {
-			notFound: true,
+			notFound: true
 		}
 	}
 }
